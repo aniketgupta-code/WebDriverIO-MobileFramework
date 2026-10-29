@@ -1,0 +1,30 @@
+{
+	"name": "webdriverio-mobile-framework",
+	"version": "1.0.0",
+	"description": "Mobile automation framework using WebDriverIO, Appium and TypeScript",
+	"scripts": {
+		"test:android": "cross-env PLATFORM=android wdio run wdio.config.ts",
+		"test:ios": "cross-env PLATFORM=ios wdio run wdio.config.ts",
+		"test": "wdio run wdio.config.ts"
+	},
+	"devDependencies": {
+		"@wdio/appium-service": "^9.0.0",
+		"@wdio/cli": "^9.0.0",
+		"@wdio/local-runner": "^9.0.0",
+		"@wdio/mocha-framework": "^9.0.0",
+		"@wdio/spec-reporter": "^9.0.0",
+		"appium": "^2.0.0",
+		"appium-uiautomator2-driver": "^3.0.0",
+		"appium-xcuitest-driver": "^7.0.0",
+		"cross-env": "^10.1.0",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.5.0"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"dependencies": {
+		"dotenv": "^17.4.2",
+		"jsonpath-plus": "^10.4.0"
+	}
+}
